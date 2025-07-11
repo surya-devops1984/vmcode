@@ -93,7 +93,7 @@ resource "azurerm_network_interface_security_group_association" "nsg-association
   network_security_group_id = azurerm_network_security_group.nsg.id
 }
 
-resource "azurerm_resource_group" "rg3" {
-  name = "rg-vm-agra3"
+resource "azurerm_resource_group" "rg4" {
+  name = "rg-vm-agra4"
   location = "West US 3"
 }
