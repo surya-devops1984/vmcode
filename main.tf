@@ -97,3 +97,8 @@ resource "azurerm_resource_group" "rg4" {
   name = "rg-vm-agra4"
   location = "West US 3"
 }
+
+resource "azurerm_resource_group" "rg5" {
+  name = "rg-vm-agra5"
+  location = "West US 3"
+}
