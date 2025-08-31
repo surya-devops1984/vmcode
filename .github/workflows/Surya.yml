@@ -29,7 +29,12 @@ jobs:
           
         - name: Check Terraform version
           run: terraform -version
-            
+        - name: Terraform init
+          run: terraform init  
+        - name: Terraform validate
+          run: terraform validate
+        - name: Terraform plan
+          run: terraform plan
             
             
                                     
