@@ -26,6 +26,32 @@ jobs:
               environment: azurecloud
               # The type of authentication. Supported values are SERVICE_PRINCIPAL, IDENTITY. Default value is SERVICE_PRINCIPAL
               auth-type: SERVICE_PRINCIPAL
+              
+        - name: Install Terraform
+              # You may pin to the exact commit or the version.
+              # uses: little-core-labs/install-terraform@1e577535d279f1999a5abf60337ddc3ff225e79d
+          uses: little-core-labs/install-terraform@v2.0.0
+          with:
+            # Version of terraform to download
+            version: latest
+
+        - name: Terraform PR Commenter
+          uses: robburger/terraform-pr-commenter@v1.5.0
+          with:
+            # The type of comment. Options: [fmt, init, plan]
+            commenter_type: init
+
+        - name: Terraform PR Commenter
+          uses: robburger/terraform-pr-commenter@v1.5.0
+          with:
+            # The type of comment. Options: [fmt, init, plan]
+            commenter_type: plan
+    
+            
+            
+            
+                                    
+              
                 
 
 
