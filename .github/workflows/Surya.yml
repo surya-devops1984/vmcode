@@ -9,6 +9,22 @@ on:
 jobs:
   production-deploy:
     runs-on: ubuntu-latest
+    steps:
+        - name: Azure Login
+          uses: Azure/login@v2.3.0
+          with:
+              # ClientId of the Azure Service principal created.
+              client-id: c578a89c-8feb-4f2f-88cb-8c48581bd989
+              # TenantId of the Azure Service principal created.
+              tenant-id: defb5fbe-74e0-453c-9d33-594936bf34c5
+              # Azure subscriptionId
+              subscription-id: 81cc1915-8d88-419e-8fa3-0178811761bd
+              # Name of the environment. Supported values are azurecloud, azurestack, azureusgovernment, azurechinacloud, azuregermancloud. Default being azurecloud
+              environment: azurecloud
+              # The type of authentication. Supported values are SERVICE_PRINCIPAL, IDENTITY. Default value is SERVICE_PRINCIPAL
+              auth-type: optional, default is SERVICE_PRINCIPAL
+                
+
 
 
 
