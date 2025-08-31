@@ -22,7 +22,7 @@ jobs:
               # Name of the environment. Supported values are azurecloud, azurestack, azureusgovernment, azurechinacloud, azuregermancloud. Default being azurecloud
               environment: azurecloud
               # The type of authentication. Supported values are SERVICE_PRINCIPAL, IDENTITY. Default value is SERVICE_PRINCIPAL
-              auth-type: optional, default is SERVICE_PRINCIPAL
+              auth-type: SERVICE_PRINCIPAL
                 
 
 
